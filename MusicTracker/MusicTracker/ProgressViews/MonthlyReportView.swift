@@ -96,8 +96,10 @@ struct MonthlyReportView_Previews: PreviewProvider {
     static var previews: some View {
         MonthlyReportView()
           .previewDevice("iPad Air (5th generation)")
+          .environmentObject(DataManager())
        
         MonthlyReportView()
             .previewDevice("iPod touch (7th generation)")
+            .environmentObject(DataManager())
     }
 }

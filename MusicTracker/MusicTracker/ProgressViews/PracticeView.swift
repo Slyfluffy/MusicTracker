@@ -98,5 +98,6 @@ struct PracticeView_Previews: PreviewProvider {
     static var previews: some View {
         PracticeView()
             .previewDevice("iPod touch (7th generation)")
+            .environmentObject(DataManager())
     }
 }

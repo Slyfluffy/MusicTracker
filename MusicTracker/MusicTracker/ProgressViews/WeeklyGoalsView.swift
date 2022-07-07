@@ -90,8 +90,10 @@ struct WeeklyGoalsView_Previews: PreviewProvider {
     static var previews: some View {
         WeeklyGoalsView()
             .previewDevice("iPad Air (5th generation)")
+            .environmentObject(DataManager())
         
         WeeklyGoalsView()
             .previewDevice("iPod touch (7th generation)")
+            .environmentObject(DataManager())
     }
 }
