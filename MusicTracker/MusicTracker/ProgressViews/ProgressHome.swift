@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/*
+ * PROGRESSHOME :: MUSICTRACKER
+ * View that handles all progression for music students
+ */
 struct ProgressHome: View {
     @EnvironmentObject var data: DataManager
     
@@ -18,14 +22,18 @@ struct ProgressHome: View {
     @State private var goalsAchievedMonth = [0, 1, 2, 3]
     
     var body: some View {
+        // Dynamically Adjust according to screen size
         GeometryReader { geo in
             VStack {
+                // Display Progress Report
                 MonthlyReportView()
                     .frame(width: geo.size.width,
                            height: geo.size.height * size)
+                // Display Weekly Goals
                 WeeklyGoalsView()
                     .frame(width: geo.size.width,
                            height: geo.size.height * size)
+                // Display Practice days
                 PracticeView()
                     .frame(width: geo.size.width,
                            height: geo.size.height * size)

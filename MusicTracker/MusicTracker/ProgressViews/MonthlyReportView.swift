@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/*
+ * MONTHLYREPORTVIEW :: MUSICTRACKER
+ * Displays the monthly progress of the user
+ */
 struct MonthlyReportView: View {
     @EnvironmentObject var data: DataManager
     
@@ -22,9 +26,11 @@ struct MonthlyReportView: View {
     @State private var goalsAchievedMonth = [0, 0, 0, 0]
     
     var body: some View {
+        // Dynamically adjust all pictures and text
         GeometryReader { geo in
             VStack {
                 HStack {
+                    // Section icon
                     Image(systemName: "chart.bar.fill")
                         .resizable()
                         .scaledToFit()
@@ -39,6 +45,7 @@ struct MonthlyReportView: View {
                 HStack {
                     Spacer()
                     VStack {
+                        // Week icon
                         Image(systemName: "calendar")
                             .resizable()
                             .scaledToFit()
@@ -52,6 +59,7 @@ struct MonthlyReportView: View {
                     }
                     Spacer()
                     VStack {
+                        // Goals icon
                         Image(systemName: "checklist")
                             .resizable()
                             .scaledToFit()
@@ -65,6 +73,7 @@ struct MonthlyReportView: View {
                     }
                     Spacer()
                     VStack {
+                        // Days Practiced Icon
                         Image(systemName: "checkmark.circle")
                             .resizable()
                             .scaledToFit()
@@ -86,6 +95,7 @@ struct MonthlyReportView: View {
         }
     }
     
+    // Set the goals and practice days according to the saved data
     func setData() async {
         daysPracticedMonth = data.daysPracticedMonth
         goalsAchievedMonth = data.goalsAchievedMonth

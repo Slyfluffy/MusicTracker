@@ -23,10 +23,12 @@ struct PracticeView: View {
                                     false, false, false]
     
     var body: some View {
+        // Adjust everything according to screen size
         GeometryReader { geo in
             ScrollView(.horizontal) {
                 HStack(spacing: spacing) {
                     if let days = week {
+                        // Create the Button for the seven days of the week
                         ForEach(0..<7) { index in
                             VStack {
                                 Spacer()
@@ -73,10 +75,12 @@ struct PracticeView: View {
         }
     }
     
+    // Set the data from the saved data
     func setData() async {
         completed = data.daysPracticedWeek
     }
     
+    // Get every day of the current week
     func getWeek() async -> [Date]? {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date())

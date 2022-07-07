@@ -29,8 +29,6 @@ struct SoundManager {
        do {
            audioPlayer = try AVAudioPlayer(contentsOf: url)
            audioPlayer.play()
-       } catch {
-           print("Error")
-       }
+       } catch { print("Error: Cannot play beat.") }
    }
 }

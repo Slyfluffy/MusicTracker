@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/*
+ * WEEKLYGOALSVIEW :: MUSICTRACKER
+ * UI for the weekly goals
+ */
 struct WeeklyGoalsView: View {
     @EnvironmentObject var data: DataManager
     
@@ -22,6 +26,7 @@ struct WeeklyGoalsView: View {
     @State private var textScaleFactor = 0.75
     
     var body: some View {
+        // Once again, dynamically adjust sizes for screen
         GeometryReader { geo in
             VStack {
                 HStack {
@@ -35,6 +40,7 @@ struct WeeklyGoalsView: View {
                     Spacer()
                 }
                 Spacer()
+                // Go through and create the UI for three goals
                 ForEach(0..<3) { index in
                     Spacer()
                     HStack {
@@ -80,6 +86,7 @@ struct WeeklyGoalsView: View {
         }
     }
     
+    // Set the data according to what is stored!
     func setData() async {
         completed = data.goalsCompleted
         goals = data.goals
