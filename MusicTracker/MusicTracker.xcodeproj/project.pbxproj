@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE2092C3286A179300792A7A /* MetroTunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2092C2286A179300792A7A /* MetroTunerView.swift */; };
-		CE259E4A285B925B0002840F /* MusicHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE259E49285B925B0002840F /* MusicHome.swift */; };
-		CE2EDAD8286F51B900F3C7EF /* progressDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2EDAD7286F51B900F3C7EF /* progressDataManager.swift */; };
-		CE43806F2864CA0600A5D816 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43806E2864CA0600A5D816 /* PracticeView.swift */; };
-		CEADB1C12825CAB7000CECA8 /* MusicTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1C02825CAB7000CECA8 /* MusicTrackerApp.swift */; };
-		CEADB1C32825CAB7000CECA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1C22825CAB7000CECA8 /* ContentView.swift */; };
+		CE936CE3287745EC001B237C /* MusicTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1C02825CAB7000CECA8 /* MusicTrackerApp.swift */; };
+		CE936CE4287745EC001B237C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1C22825CAB7000CECA8 /* ContentView.swift */; };
+		CE936CE5287745EC001B237C /* MetroTunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2092C2286A179300792A7A /* MetroTunerView.swift */; };
+		CE936CE6287745EC001B237C /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1EA2825CAC9000CECA8 /* MetronomeView.swift */; };
+		CE936CE7287745EC001B237C /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACE662849230F0083F8BE /* TunerView.swift */; };
+		CE936CE8287745EC001B237C /* ProgressHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1EF2825CAD4000CECA8 /* ProgressHome.swift */; };
+		CE936CE9287745EC001B237C /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5707A2862233400AEEC5A /* MonthlyReportView.swift */; };
+		CE936CEA287745EC001B237C /* WeeklyGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5707C28622EE000AEEC5A /* WeeklyGoalsView.swift */; };
+		CE936CEB287745EC001B237C /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43806E2864CA0600A5D816 /* PracticeView.swift */; };
+		CE936CEC287745EC001B237C /* MusicHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE259E49285B925B0002840F /* MusicHome.swift */; };
+		CE936CED287745EC001B237C /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACE68284923CA0083F8BE /* Tuner.swift */; };
+		CE936CEE287745EC001B237C /* metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1ED2825CACE000CECA8 /* metronome.swift */; };
+		CE936CEF287745EC001B237C /* progressDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2EDAD7286F51B900F3C7EF /* progressDataManager.swift */; };
 		CEADB1C52825CAB9000CECA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1C42825CAB9000CECA8 /* Assets.xcassets */; };
 		CEADB1C82825CAB9000CECA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1C72825CAB9000CECA8 /* Preview Assets.xcassets */; };
 		CEADB1D22825CABA000CECA8 /* MusicTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1D12825CABA000CECA8 /* MusicTrackerTests.swift */; };
 		CEADB1DC2825CABA000CECA8 /* MusicTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1DB2825CABA000CECA8 /* MusicTrackerUITests.swift */; };
 		CEADB1DE2825CABA000CECA8 /* MusicTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1DD2825CABA000CECA8 /* MusicTrackerUITestsLaunchTests.swift */; };
-		CEADB1EB2825CAC9000CECA8 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1EA2825CAC9000CECA8 /* MetronomeView.swift */; };
-		CEADB1EE2825CACE000CECA8 /* metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1ED2825CACE000CECA8 /* metronome.swift */; };
-		CEADB1F02825CAD4000CECA8 /* ProgressHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1EF2825CAD4000CECA8 /* ProgressHome.swift */; };
 		CEADB1F32825CC56000CECA8 /* beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1F22825CC56000CECA8 /* beat.mp3 */; };
-		CED5707B2862233400AEEC5A /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5707A2862233400AEEC5A /* MonthlyReportView.swift */; };
-		CED5707D28622EE000AEEC5A /* WeeklyGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5707C28622EE000AEEC5A /* WeeklyGoalsView.swift */; };
-		CEDACE672849230F0083F8BE /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACE662849230F0083F8BE /* TunerView.swift */; };
-		CEDACE69284923CA0083F8BE /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACE68284923CA0083F8BE /* Tuner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,7 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEADB1E12825CABA000CECA8 /* Build configuration list for PBXNativeTarget "MusicTracker" */;
 			buildPhases = (
-				CEADB1B92825CAB7000CECA8 /* Sources */,
+				CE936CE2287745CB001B237C /* Sources */,
 				CEADB1BA2825CAB7000CECA8 /* Frameworks */,
 				CEADB1BB2825CAB7000CECA8 /* Resources */,
 			);
@@ -330,23 +330,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEADB1B92825CAB7000CECA8 /* Sources */ = {
+		CE936CE2287745CB001B237C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEADB1EE2825CACE000CECA8 /* metronome.swift in Sources */,
-				CE2EDAD8286F51B900F3C7EF /* progressDataManager.swift in Sources */,
-				CEADB1EB2825CAC9000CECA8 /* MetronomeView.swift in Sources */,
-				CEADB1F02825CAD4000CECA8 /* ProgressHome.swift in Sources */,
-				CE2092C3286A179300792A7A /* MetroTunerView.swift in Sources */,
-				CEADB1C32825CAB7000CECA8 /* ContentView.swift in Sources */,
-				CED5707B2862233400AEEC5A /* MonthlyReportView.swift in Sources */,
-				CE43806F2864CA0600A5D816 /* PracticeView.swift in Sources */,
-				CE259E4A285B925B0002840F /* MusicHome.swift in Sources */,
-				CED5707D28622EE000AEEC5A /* WeeklyGoalsView.swift in Sources */,
-				CEDACE69284923CA0083F8BE /* Tuner.swift in Sources */,
-				CEADB1C12825CAB7000CECA8 /* MusicTrackerApp.swift in Sources */,
-				CEDACE672849230F0083F8BE /* TunerView.swift in Sources */,
+				CE936CE3287745EC001B237C /* MusicTrackerApp.swift in Sources */,
+				CE936CE4287745EC001B237C /* ContentView.swift in Sources */,
+				CE936CE5287745EC001B237C /* MetroTunerView.swift in Sources */,
+				CE936CE6287745EC001B237C /* MetronomeView.swift in Sources */,
+				CE936CE7287745EC001B237C /* TunerView.swift in Sources */,
+				CE936CE8287745EC001B237C /* ProgressHome.swift in Sources */,
+				CE936CE9287745EC001B237C /* MonthlyReportView.swift in Sources */,
+				CE936CEA287745EC001B237C /* WeeklyGoalsView.swift in Sources */,
+				CE936CEB287745EC001B237C /* PracticeView.swift in Sources */,
+				CE936CEC287745EC001B237C /* MusicHome.swift in Sources */,
+				CE936CED287745EC001B237C /* Tuner.swift in Sources */,
+				CE936CEE287745EC001B237C /* metronome.swift in Sources */,
+				CE936CEF287745EC001B237C /* progressDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
