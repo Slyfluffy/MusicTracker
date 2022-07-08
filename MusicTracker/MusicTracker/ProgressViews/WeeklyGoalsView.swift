@@ -15,7 +15,7 @@ struct WeeklyGoalsView: View {
     @EnvironmentObject var data: DataManager
     
     @State private var checklistWidth = 0.2
-    @State private var checklistHeight = 0.25
+    @State private var checklistHeight = 0.23
     
     @State private var circleWidth = 0.22
     @State private var circleHeight = 0.22
@@ -39,10 +39,9 @@ struct WeeklyGoalsView: View {
                         .padding(.leading)
                     Spacer()
                 }
-                Spacer()
+                
                 // Go through and create the UI for three goals
                 ForEach(0..<3) { index in
-                    Spacer()
                     HStack {
                         Button(action: {
                             completed[index] = !completed[index]
@@ -83,6 +82,7 @@ struct WeeklyGoalsView: View {
             .task() {
                 await setData()
             }
+            Spacer()
         }
     }
     
@@ -101,6 +101,11 @@ struct WeeklyGoalsView_Previews: PreviewProvider {
         
         WeeklyGoalsView()
             .previewDevice("iPod touch (7th generation)")
+            .environmentObject(DataManager())
+        
+        WeeklyGoalsView()
+            .previewDevice("iPod touch (7th generation)")
+            .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(DataManager())
     }
 }

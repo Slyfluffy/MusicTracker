@@ -14,7 +14,7 @@ import SwiftUI
 struct ProgressHome: View {
     @EnvironmentObject var data: DataManager
     
-    @State private var size = 0.32
+    @State private var size = 0.33
      
     @State private var completed = [false, false, false]
     @State private var goals = ["task1", "task2", "task3"]
