@@ -17,7 +17,7 @@ struct MonthlyReportView: View {
     @State private var progressBarWidth = 0.2
     @State private var progressBarHeight = 0.23
     @State private var progressFontSize = 20.0
-    @State private var textScaleFactor = 0.5
+    @State private var textScaleFactor = 0.6
     
     @State private var iconHeaderWidth = 0.2
     @State private var iconHeaderHeight = 0.2

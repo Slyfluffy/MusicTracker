@@ -13,13 +13,7 @@ import SwiftUI
  */
 struct ProgressHome: View {
     @EnvironmentObject var data: DataManager
-    
     @State private var size = 0.33
-     
-    @State private var completed = [false, false, false]
-    @State private var goals = ["task1", "task2", "task3"]
-    @State private var daysPracticedMonth = [0, 1, 2, 3]
-    @State private var goalsAchievedMonth = [0, 1, 2, 3]
     
     var body: some View {
         // Dynamically Adjust according to screen size
