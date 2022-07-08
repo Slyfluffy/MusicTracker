@@ -14,14 +14,17 @@ import SwiftUI
 struct MonthlyReportView: View {
     @EnvironmentObject var data: DataManager
     
+    // Progress header settings
     @State private var progressBarWidth = 0.2
     @State private var progressBarHeight = 0.23
     @State private var progressFontSize = 20.0
     @State private var textScaleFactor = 0.6
     
+    // icon Header settings
     @State private var iconHeaderWidth = 0.2
     @State private var iconHeaderHeight = 0.2
     
+    // data
     @State private var daysPracticedMonth = [0, 0, 0, 0]
     @State private var goalsAchievedMonth = [0, 0, 0, 0]
     
@@ -39,11 +42,13 @@ struct MonthlyReportView: View {
                                alignment: .leading)
                         .padding(.leading)
                         .padding(.top, 5)
-                        Spacer()
+                    
+                    Spacer()
                 }
                 
                 HStack {
                     Spacer()
+                    
                     VStack {
                         // Week icon
                         Image(systemName: "calendar")
@@ -51,13 +56,17 @@ struct MonthlyReportView: View {
                             .scaledToFit()
                             .frame(width: geo.size.width * iconHeaderWidth,
                                    height: geo.size.height * iconHeaderHeight)
+                        
+                        // Display each of the past four weeks
                         ForEach((0...3).reversed(), id: \.self) {
                             Text("\($0 + 1) weeks")
                                 .font(.system(size: progressFontSize))
                                 .minimumScaleFactor(textScaleFactor)
                         }
                     }
+                    
                     Spacer()
+                    
                     VStack {
                         // Goals icon
                         Image(systemName: "checklist")
@@ -65,13 +74,17 @@ struct MonthlyReportView: View {
                             .scaledToFit()
                             .frame(width: geo.size.width * iconHeaderWidth,
                                    height:geo.size.height * iconHeaderHeight)
+                        
+                        // Display the summary of goals for each week
                         ForEach((0...3), id: \.self) {
                             Text("\(goalsAchievedMonth[$0])/3")
                                 .font(.system(size: progressFontSize))
                                 .minimumScaleFactor(textScaleFactor)
                         }
                     }
+                    
                     Spacer()
+                    
                     VStack {
                         // Days Practiced Icon
                         Image(systemName: "checkmark.circle")
@@ -79,6 +92,8 @@ struct MonthlyReportView: View {
                             .scaledToFit()
                             .frame(width: geo.size.width * iconHeaderWidth,
                                    height: geo.size.height * iconHeaderHeight)
+                        
+                        // Display the summary of days practiced each week
                         ForEach((0...3), id: \.self) {
                             Text("\(daysPracticedMonth[$0])/7")
                                 .font(.system(size: progressFontSize))

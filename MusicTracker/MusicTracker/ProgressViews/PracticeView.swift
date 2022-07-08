@@ -6,17 +6,23 @@
 //
 
 import SwiftUI
-
+/*
+ * PRACTICEVIEW :: MUSICTRACKER
+ * View that handles everything for daily practice
+ */
 struct PracticeView: View {
     @EnvironmentObject var data: DataManager
     
+    // Circle settings
     @State private var circleWidth = 0.18
     @State private var circleHeight = 0.18
     @State private var spacing = 15.0
     
+    // Date text settings
     @State private var textSize = 16.0
     @State private var textScaleFactor = 0.1
     
+    // Formatter and data
     @State private var formatter = DateFormatter()
     @State private var week: [Date]?
     @State private var completed = [false, false, false, false,
@@ -32,6 +38,7 @@ struct PracticeView: View {
                         ForEach(0..<7) { index in
                             VStack {
                                 Spacer()
+                                
                                 Button(action: {
                                     completed[index] = !completed[index]
                                     data.updateDaysPracticedWeek(completed)
