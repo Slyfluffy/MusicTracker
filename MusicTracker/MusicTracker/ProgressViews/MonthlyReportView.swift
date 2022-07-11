@@ -34,7 +34,7 @@ struct MonthlyReportView: View {
             VStack {
                 HStack {
                     // Section icon
-                    Image(systemName: "chart.bar.fill")
+                    Image(systemName: "chart.bar.xaxis")
                         .resizable()
                         .scaledToFit()
                         .frame(width: geo.size.width * progressBarWidth,
@@ -42,6 +42,7 @@ struct MonthlyReportView: View {
                                alignment: .leading)
                         .padding(.leading)
                         .padding(.top, 5)
+                        .padding(.bottom, 5)
                     
                     Spacer()
                 }

@@ -11,7 +11,7 @@ import Foundation
 struct Note: Equatable {
     enum Accidental: Int { case natural = 0, sharp, flat }
     enum Name: Int { case a = 0, b, c, d, e, f, g }
-   
+    
     static let octave: [Note] = [
         Note(.c, .natural), Note(.c, .sharp),
         Note(.d, .natural),

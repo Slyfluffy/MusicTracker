@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFoundation
+
 /**
  * SOUNDMANAGER :: MUSICTRACKER
  * Handles the playing of the beat sound.

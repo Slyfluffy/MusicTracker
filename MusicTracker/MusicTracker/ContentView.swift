@@ -31,7 +31,7 @@ struct ContentView: View {
                 .tag(Tab.MusicHome)
             ProgressHome()
                 .tabItem() {
-                    Label("Progress", systemImage: "chart.bar.fill")
+                    Label("Progress", systemImage: "chart.bar.xaxis")
                 }
                 .tag(Tab.Progress)
                 .environmentObject(data)

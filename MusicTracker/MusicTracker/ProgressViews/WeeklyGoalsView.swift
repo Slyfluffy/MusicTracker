@@ -79,9 +79,7 @@ struct WeeklyGoalsView: View {
                     .padding(.leading)
                 }
             }
-            .task() {
-                await setData()
-            }
+            .task() { await setData() }
             Spacer()
         }
     }
