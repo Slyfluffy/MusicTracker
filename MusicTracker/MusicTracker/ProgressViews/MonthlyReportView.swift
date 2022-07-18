@@ -82,6 +82,9 @@ struct MonthlyReportView: View {
                                 .font(.system(size: progressFontSize))
                                 .minimumScaleFactor(textScaleFactor)
                         }
+                        Text("13/3")
+                            .font(.system(size: progressFontSize))
+                            .minimumScaleFactor(textScaleFactor)
                     }
                     
                     Spacer()
@@ -121,8 +124,8 @@ struct MonthlyReportView: View {
 struct MonthlyReportView_Previews: PreviewProvider {
     static var previews: some View {
         MonthlyReportView()
-          .previewDevice("iPad Air (5th generation)")
-          .environmentObject(DataManager())
+            .previewDevice("iPad Air (5th generation)")
+            .environmentObject(DataManager())
        
         MonthlyReportView()
             .previewDevice("iPod touch (7th generation)")
